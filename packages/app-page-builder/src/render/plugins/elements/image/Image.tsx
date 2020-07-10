@@ -37,7 +37,7 @@ const Image = props => {
     } else {
         style.height += style.height.endsWith("px") ? "" : "px";
     }
-
+    console.log("RENDER IMAGE:::::::::::");
     return (
         <ElementRoot
             element={props.element}

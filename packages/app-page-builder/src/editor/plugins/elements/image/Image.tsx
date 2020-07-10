@@ -2,6 +2,7 @@ import * as React from "react";
 import { ElementRoot } from "@webiny/app-page-builder/render/components/ElementRoot";
 import ImageContainer from "./ImageContainer";
 //check this file 
+console.log("EDITOR IMAGE:::::::::::");
 const Image = ({ element }) => {
     return (
         <ElementRoot
