@@ -11,7 +11,7 @@ import {
     PbEditorPageElementPlugin,
     PbEditorPageElementSettingsPlugin
 } from "@webiny/app-page-builder/types";
-
+//check this file
 export default () => {
     const PreviewBox = styled("div")({
         textAlign: "center",
