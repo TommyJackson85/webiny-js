@@ -26,7 +26,7 @@ const SignIn: React.FC<SignInChildrenProps> = ({ signIn, error, loading, authPro
                                 </h1>
                             </Title>
 
-                            {authProps.message && (
+                            {authProps.message && !error && (
                                 <Grid>
                                     <Cell span={12}>
                                         <Alert
