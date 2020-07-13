@@ -13,6 +13,11 @@ import { alignRight, alignCenter, InnerContent, Title, errorMessage } from "./St
 import { SignInChildrenProps } from "@webiny/app-plugin-security-cognito/types";
 
 const SignIn: React.FC<SignInChildrenProps> = ({ signIn, error, loading, authProps }) => {
+    console.log("Error::::::");
+    console.log(error);
+    console.log("AUTHPROPS.message::::::::");
+    console.log(authProps.message);
+
     return (
         <StateContainer>
             <Form onSubmit={signIn} submitOnEnter>
@@ -39,7 +44,7 @@ const SignIn: React.FC<SignInChildrenProps> = ({ signIn, error, loading, authPro
                                 </Grid>
                             )}
 
-                            {error && (
+                            {error && !authProps.message && (
                                 <Grid>
                                     <Cell span={12} className={errorMessage}>
                                         <Alert title="Authentication error" type={"danger"}>

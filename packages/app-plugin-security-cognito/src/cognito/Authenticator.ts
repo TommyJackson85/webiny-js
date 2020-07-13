@@ -102,13 +102,11 @@ class AuthenticatorClass extends React.Component<AuthenticatorProps, Authenticat
         if (state === "signedOut") {
             state = "signIn";
         }
-
         this.setState({ authState: state, authData: data });
     };
 
     render() {
         const { authState, authData, checkingUser, message } = this.state;
-
         return this.props.children({
             authState,
             authData,
